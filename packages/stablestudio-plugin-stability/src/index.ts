@@ -605,9 +605,6 @@ function parseExtras(extras: any): any | undefined {
 
   return undefined;
 }
-/*
- ## [📖 README](https://github.com/Stability-AI/StableStudio) · [🎮 Discord](https://discord.com/channels/1002292111942635562/1108055793674227782) · [🌈 DreamStudio](https://dreamstudio.ai) · [💬 Discussion](https://github.com/Stability-AI/StableStudio/discussions)
-*/
 
 const markdownDescription = `
 # Welcome to Truthtide Studio!
