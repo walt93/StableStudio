@@ -7,7 +7,7 @@ export namespace Count {
     const [count, setCount] = Count.use();
     return (
       <Theme.Slider
-        title="Image count"
+        title="Image count (1 credit each)"
         min={1}
         max={4}
         value={count}
