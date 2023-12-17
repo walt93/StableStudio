@@ -103,7 +103,7 @@ export function Advanced({
             }
             placement="right"
           >
-            <Theme.NumberInput
+{/*            <Theme.NumberInput
               icon={Theme.Icon.Steps}
               label="Generation steps"
               fullWidth
@@ -114,7 +114,18 @@ export function Advanced({
               value={input.steps}
               onNumberChange={onStepsChange}
             />
-          </Theme.Tooltip>
+*/}
+          <Theme.Slider
+            label="Generation steps"
+            min={30}
+            max={70}
+            step={1}
+            value={input.steps}
+            onChange={onStepsChange}
+            icon={Theme.Icon.Steps}
+            fullWidth
+          />
+        </Theme.Tooltip>
         </div>
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-2 items-end gap-8">
