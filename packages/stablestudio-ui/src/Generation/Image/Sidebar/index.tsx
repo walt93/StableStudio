@@ -19,12 +19,9 @@ export function Sidebar() {
       position="left"
       index={0}
       icon={Theme.Icon.Generate}
-      formerly_enabled={
-        location.pathname.startsWith("/generate") ||
-        location.pathname.startsWith("/edit")
-      }
       enabled={
-        location.pathname.startsWith("/generate")
+        location.pathname.startsWith("/generate") 
+        // || location.pathname.startsWith("/edit")
       }
       bottom={
         <App.Sidebar.Tab.Bottom>
