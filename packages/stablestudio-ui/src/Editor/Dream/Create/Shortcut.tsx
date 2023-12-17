@@ -8,7 +8,7 @@ export namespace Shortcuts {
     Shortcut.use(
       useMemo(
         () => ({
-          name: ["Render", "Create"],
+          name: ["Dream", "Create"],
           icon: Theme.Icon.Plus,
 
           keys: ["Meta", "d"],
