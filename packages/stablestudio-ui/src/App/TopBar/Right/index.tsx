@@ -8,7 +8,7 @@ export const Right = () => {
   return (
     <div className="flex grow basis-0 items-center justify-end gap-2">
       <>
-{/*        {!isMobileDevice && (
+        {!isMobileDevice && (
           <Theme.Button
             outline
             className="rounded-full"
@@ -22,7 +22,7 @@ export const Right = () => {
             <Shortcut.Keys keys={["Meta", "k"]} className="ml-2" />
           </Theme.Button>
         )}
-*/}        <Link to="/settings">
+        <Link to="/settings">
           <Theme.Button
             outline
             label="Settings"
