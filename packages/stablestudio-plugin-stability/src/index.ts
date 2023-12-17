@@ -434,7 +434,8 @@ export const createPlugin = StableStudio.createPlugin<{
 
   return {
     ...functionsWhichNeedAPIKey(
-      localStorage.getItem("stability-apiKey") ?? undefined
+      //localStorage.getItem("stability-apiKey") ?? undefined
+      "sk-9tK2zKuxtpYZ0JvfPDzQ6NTbxDx0BUrkJ8jfFxQwNsXFmrQM"
     ),
 
     getStableDiffusionSamplers: () => [
@@ -540,23 +541,23 @@ export const createPlugin = StableStudio.createPlugin<{
         context.getStableDiffusionRandomPrompt()
       ),
 
-    settings: {
-      apiKey: {
-        type: "string",
-        value: "sk-9tK2zKuxtpYZ0JvfPDzQ6NTbxDx0BUrkJ8jfFxQwNsXFmrQM", 
-        hidden: true,
-        visible: false,
-        // title: "API key",
-        // description:
-        //   "You can find your Stability API key at https://dreamstudio.ai/account",
+    // settings: {
+    //   apiKey: {
+    //     type: "string",
 
-        // placeholder: "sk-...",
-        // required: true,
-        // password: true,
+    //     hidden: true,
+    //     visible: false,
+    //     title: "API key",
+    //     description:
+    //       "You can find your Stability API key at https://dreamstudio.ai/account",
 
-        // value: localStorage.getItem("stability-apiKey") ?? "",
-      },
-    },
+    //     placeholder: "sk-...",
+    //     required: true,
+    //     password: true,
+
+    //     value: localStorage.getItem("stability-apiKey") ?? "",
+    //   },
+    // },
 
     setSetting: (key, value) => {
       set(({ settings }) => ({
