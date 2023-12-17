@@ -559,19 +559,19 @@ export const createPlugin = StableStudio.createPlugin<{
     //   },
     // },
 
-    setSetting: (key, value) => {
-      set(({ settings }) => ({
-        settings: {
-          ...settings,
-          [key]: { ...settings[key], value: value as string },
-        },
-      }));
+    // setSetting: (key, value) => {
+    //   set(({ settings }) => ({
+    //     settings: {
+    //       ...settings,
+    //       [key]: { ...settings[key], value: value as string },
+    //     },
+    //   }));
 
-      if (key === "apiKey" && typeof value === "string") {
-        localStorage.setItem("stability-apiKey", value);
-        set((plugin) => ({ ...plugin, ...functionsWhichNeedAPIKey(value) }));
-      }
-    },
+    //   if (key === "apiKey" && typeof value === "string") {
+    //     localStorage.setItem("stability-apiKey", value);
+    //     set((plugin) => ({ ...plugin, ...functionsWhichNeedAPIKey(value) }));
+    //   }
+    // },
 
     manifest: {
       author: "Truthtide·TV",
