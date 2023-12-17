@@ -574,11 +574,11 @@ export const createPlugin = StableStudio.createPlugin<{
     },
 
     manifest: {
-      author: "Truthtide·TV",
+      author: "Rightway LLC",
       description: markdownDescription,
       name: "Truthtide Studio",
       link: "https://truthtide.studio",
-      license: "©2023 Rightway LLC",
+      license: "©2023",
       version: "0.9.0 alpha",
       icon: "/favicon.svg",
     },
@@ -610,14 +610,23 @@ function parseExtras(extras: any): any | undefined {
 }
 
 const markdownDescription = `
-# Welcome to Truthtide Studio!
 
-# Truthtide•TV Members
+## 🌊 Welcome to Truthtide Studio!
 
-Your Truthtide•TV membership gives you a set number of image renders per month. Image renders are re-loaded on the 1st of the month.
+🌟 Exclusive Benefits for Truthtide•TV Members
 
-If you need additional renders, you can subscribe at the [Truthtide Studio monthly membership page](https://truthtide.studio/subscribe). Or, to make a one-time purchase, you can [purchase renders one-time here](https://truthtide.studio/buy-renders).
+As a valued Truthtide•TV member, enjoy your creative journey with complimentary monthly image renders! Your image render credits are refreshed on the 1st of every month, ensuring a fresh start for your creative explorations.
 
-We have a collection of sample images with the prompts that generated them on our [Sample Prompts page](https://truthtide.studeio/sample-prompts).
+🎨 Need More Creativity?
+
+If your imagination demands more, we've got you covered!
+
+Expand Your Horizons: Opt for our Truthtide Studio Monthly Membership for an unlimited flow of image renders. [Subscribe Here](https://truthtide.studio/subscribe).
+Just a Few More: For occasional needs, avail One-Time Render Purchases for that extra creative boost. [Purchase Here](https://truthtide.studio/buy-renders).
+👀 Inspiration Awaits!
+
+Dive into our diverse collection of stunning visuals on the Sample Prompts page. Explore, get inspired, and see what others have created with Truthtide Studio! [Explore the Sample prompts](https://truthtide.studio/sample-prompts).
 ![](/media/image_samples.png)
+
+We're excited to see what you create. Unleash your imagination with Truthtide Studio!
 ` as const;
