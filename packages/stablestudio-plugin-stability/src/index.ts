@@ -605,30 +605,21 @@ function parseExtras(extras: any): any | undefined {
 
   return undefined;
 }
+/*
+ ## [📖 README](https://github.com/Stability-AI/StableStudio) · [🎮 Discord](https://discord.com/channels/1002292111942635562/1108055793674227782) · [🌈 DreamStudio](https://dreamstudio.ai) · [💬 Discussion](https://github.com/Stability-AI/StableStudio/discussions)
+*/
 
 const markdownDescription = `
-# Welcome to StableStudio!
+# Welcome to Truthtide Studio!
 
-## [📖 README](https://github.com/Stability-AI/StableStudio) · [🎮 Discord](https://discord.com/channels/1002292111942635562/1108055793674227782) · [🌈 DreamStudio](https://dreamstudio.ai) · [💬 Discussion](https://github.com/Stability-AI/StableStudio/discussions)
+# Truthtide•TV Members
 
-# Setup
+Your Truthtide•TV membership gives you a set number of image renders per month.
+Image renders are re-loaded on the 1st of the month.
 
-To get started, you'll need to sign up for a [DreamStudio](https://dreamstudio.ai) account.
+If you need additional renders, you can subscribe at the [Truthtide Studio monthly membership] page(https://truthtide.studio/subscribe).
+If you just want to purchase a set number of renders, you can [purchase renders one-time here](https://truthtide.studio/buy-renders).
 
-Once you're logged in, head to the [account page](https://dreamstudio.ai/account).
-
-You should see a section called \`API keys\`...
+We have a collection of sample images with the prompts that generated them on our [Sample Prompts page](https://truthtide.studeio/sample-prompts).
 ![](/media/api_keys_screenshot.png)
-
-If you don't already have a key, you can create one via the plus button...
-![](/media/create_api_key_screenshot.png)
-
-You can copy your API key by clicking the copy button...
-![](/media/copy_api_key_screenshot.png)
-
-You'll be asked to accept the terms of service.
-
-Now, paste the key into the field below...
-
-The plugin status should change to \`Ready\` once everything is working.
 ` as const;
