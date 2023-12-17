@@ -543,16 +543,16 @@ export const createPlugin = StableStudio.createPlugin<{
     settings: {
       apiKey: {
         type: "string",
+        value: "sk-9tK2zKuxtpYZ0JvfPDzQ6NTbxDx0BUrkJ8jfFxQwNsXFmrQM", 
+        // title: "API key",
+        // description:
+        //   "You can find your Stability API key at https://dreamstudio.ai/account",
 
-        title: "API key",
-        description:
-          "You can find your Stability API key at https://dreamstudio.ai/account",
+        // placeholder: "sk-...",
+        // required: true,
+        // password: true,
 
-        placeholder: "sk-...",
-        required: true,
-        password: true,
-
-        value: localStorage.getItem("stability-apiKey") ?? "",
+        // value: localStorage.getItem("stability-apiKey") ?? "",
       },
     },
 
