@@ -55,7 +55,7 @@ export function Sidebar() {
 
   return (
     <>
-{/*      <App.Sidebar.Tab.Set
+      {/*<App.Sidebar.Tab.Set
         name="Edit"
         position="left"
         route="/edit"
@@ -71,14 +71,14 @@ export function Sidebar() {
           </App.Sidebar.Tab.Button>
         )}
       >
-*/}        <Editor.Tool.Sidebar.Section />
+        <Editor.Tool.Sidebar.Section />
         {isDream && (
           <Generation.Image.Sidebar.Tab variant="editor" id={inputID} />
         )}
         {!isDream && selectedID && <Editor.Image.Sidebar.Tab id={selectedID} />}
         {!selectedID && <EmptySidebar />}
-      </App.Sidebar.Tab.Set>
-      <App.Sidebar.Tab.Set
+      </App.Sidebar.Tab.Set>*/}
+      {/*<App.Sidebar.Tab.Set
         button={false}
         route="/edit"
         enabled={location.pathname.startsWith("/edit")}
@@ -88,7 +88,7 @@ export function Sidebar() {
         icon={Theme.Icon.Layers}
       >
         <Editor.Entities.Sidebar.Section />
-      </App.Sidebar.Tab.Set>
+      </App.Sidebar.Tab.Set>*/}
     </>
   );
 }
