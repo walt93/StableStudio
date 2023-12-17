@@ -540,30 +540,21 @@ export const createPlugin = StableStudio.createPlugin<{
         context.getStableDiffusionRandomPrompt()
       ),
 
-settings: {
-  apiKey: {
-    // Other settings properties can be removed or commented out
-    // if they are no longer needed.
+    settings: {
+      apiKey: {
+        type: "string",
 
-    value: "sk-9tK2zKuxtpYZ0JvfPDzQ6NTbxDx0BUrkJ8jfFxQwNsXFmrQM", // Replace with your actual API key
-  },
-},
+        title: "API key",
+        description:
+          "You can find your Stability API key at https://dreamstudio.ai/account",
 
-    // settings: {
-    //   apiKey: {
-    //     type: "string",
+        placeholder: "sk-...",
+        required: true,
+        password: true,
 
-    //     title: "API key",
-    //     description:
-    //       "You can find your Stability API key at https://dreamstudio.ai/account",
-
-    //     placeholder: "sk-...",
-    //     required: true,
-    //     password: true,
-
-    //     value: localStorage.getItem("stability-apiKey") ?? "",
-    //   },
-    // },
+        value: localStorage.getItem("stability-apiKey") ?? "",
+      },
+    },
 
     setSetting: (key, value) => {
       set(({ settings }) => ({
