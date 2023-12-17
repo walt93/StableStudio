@@ -576,7 +576,7 @@ export const createPlugin = StableStudio.createPlugin<{
       name: "Truthtide Studio",
       license: "MIT",
       link: "https://truthtide.studio",
-      version: "0.0.0",
+      version: "0.9.0 alpha",
       icon: "/favicon.svg",
     },
   };
@@ -621,5 +621,5 @@ If you need additional renders, you can subscribe at the [Truthtide Studio month
 If you just want to purchase a set number of renders, you can [purchase renders one-time here](https://truthtide.studio/buy-renders).
 
 We have a collection of sample images with the prompts that generated them on our [Sample Prompts page](https://truthtide.studeio/sample-prompts).
-![](/media/api_keys_screenshot.png)
+![](/media/image_samples.png)
 ` as const;
