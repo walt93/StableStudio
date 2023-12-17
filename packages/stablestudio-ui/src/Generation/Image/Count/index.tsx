@@ -9,7 +9,7 @@ export namespace Count {
       <Theme.Slider
         title="Image count"
         min={1}
-        max={10}
+        max={4}
         value={count}
         onChange={setCount}
       />
@@ -18,7 +18,7 @@ export namespace Count {
 }
 
 export namespace Count {
-  export const preset = () => 4 as const;
+  export const preset = () => 1 as const;
 
   export const get = (): number => store.getState().count;
   export const set = (count: number) => store.getState().setCount(count);
