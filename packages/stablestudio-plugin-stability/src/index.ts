@@ -578,6 +578,7 @@ export const createPlugin = StableStudio.createPlugin<{
       description: markdownDescription,
       name: "Truthtide Studio",
       link: "https://truthtide.studio",
+      license: "©2023 Rightway LLC",
       version: "0.9.0 alpha",
       icon: "/favicon.svg",
     },
