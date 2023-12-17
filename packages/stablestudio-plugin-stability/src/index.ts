@@ -434,8 +434,7 @@ export const createPlugin = StableStudio.createPlugin<{
 
   return {
     ...functionsWhichNeedAPIKey(
-      //localStorage.getItem("stability-apiKey") ?? undefined
-      "sk-9tK2zKuxtpYZ0JvfPDzQ6NTbxDx0BUrkJ8jfFxQwNsXFmrQM"
+      localStorage.getItem("stability-apiKey") ?? undefined
     ),
 
     getStableDiffusionSamplers: () => [
@@ -541,37 +540,37 @@ export const createPlugin = StableStudio.createPlugin<{
         context.getStableDiffusionRandomPrompt()
       ),
 
-    // settings: {
-    //   apiKey: {
-    //     type: "string",
+    settings: {
+      apiKey: {
+        type: "string",
 
-    //     hidden: true,
-    //     visible: false,
-    //     title: "API key",
-    //     description:
-    //       "You can find your Stability API key at https://dreamstudio.ai/account",
+        hidden: true,
+        visible: false,
+        title: "API key",
+        description:
+          "You can find your Stability API key at https://dreamstudio.ai/account",
 
-    //     placeholder: "sk-...",
-    //     required: true,
-    //     password: true,
+        placeholder: "sk-...",
+        required: true,
+        password: true,
 
-    //     value: localStorage.getItem("stability-apiKey") ?? "",
-    //   },
-    // },
+        value: localStorage.getItem("stability-apiKey") ?? "",
+      },
+    },
 
-    // setSetting: (key, value) => {
-    //   set(({ settings }) => ({
-    //     settings: {
-    //       ...settings,
-    //       [key]: { ...settings[key], value: value as string },
-    //     },
-    //   }));
+    setSetting: (key, value) => {
+      set(({ settings }) => ({
+        settings: {
+          ...settings,
+          [key]: { ...settings[key], value: value as string },
+        },
+      }));
 
-    //   if (key === "apiKey" && typeof value === "string") {
-    //     localStorage.setItem("stability-apiKey", value);
-    //     set((plugin) => ({ ...plugin, ...functionsWhichNeedAPIKey(value) }));
-    //   }
-    // },
+      if (key === "apiKey" && typeof value === "string") {
+        localStorage.setItem("stability-apiKey", value);
+        set((plugin) => ({ ...plugin, ...functionsWhichNeedAPIKey(value) }));
+      }
+    },
 
     manifest: {
       author: "Truthtide·TV",
