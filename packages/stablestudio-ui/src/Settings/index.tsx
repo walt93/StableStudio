@@ -78,7 +78,7 @@ export function Settings() {
             settings={settings ?? {}}
             setSetting={setSetting as never}
           />
-          <!-- <Setting
+{/*          <Setting
             settingKey="developerMode"
             setSetting={() => setDeveloperMode(!developerMode)}
             settingValue={{
@@ -90,8 +90,8 @@ export function Settings() {
               required: false,
               value: developerMode,
             }}
-          /> -->
-          {developerMode && (
+          />
+*/}          {developerMode && (
             <Install
               installPlugin={(url) => url && pluginSetup.loadFromURL(url)}
             />
