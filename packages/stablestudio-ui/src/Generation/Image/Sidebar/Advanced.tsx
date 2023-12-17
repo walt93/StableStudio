@@ -125,6 +125,9 @@ export function Advanced({
             icon={Theme.Icon.Steps}
             fullWidth
           />
+          <div style={{ textAlign: 'center', marginTop: '10px' }}>
+            Generation steps: {input.steps}
+          </div>
         </Theme.Tooltip>
         </div>
         <div className="flex flex-col gap-4">
