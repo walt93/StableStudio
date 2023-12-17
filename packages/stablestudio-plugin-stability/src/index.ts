@@ -571,13 +571,13 @@ export const createPlugin = StableStudio.createPlugin<{
     },
 
     manifest: {
-      author: "Stability AI",
+      author: "Truthtide·TV",
       description: markdownDescription,
-      name: "Stability AI",
+      name: "Truthtide Studio",
       license: "MIT",
-      link: "https://stability.ai",
+      link: "https://truthtide.studio",
       version: "0.0.0",
-      icon: "https://stability.ai/favicon.ico",
+      icon: "/favicon.svg",
     },
   };
 });
