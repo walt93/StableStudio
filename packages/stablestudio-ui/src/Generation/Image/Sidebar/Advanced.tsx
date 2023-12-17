@@ -80,7 +80,7 @@ export function Advanced({
               </h1>
             }
           >
-            <Theme.NumberInput
+{/*            <Theme.NumberInput
               icon={Theme.Icon.Scale}
               label="Prompt strength"
               placeholder="Auto"
@@ -92,6 +92,19 @@ export function Advanced({
               value={input.cfgScale}
               onNumberChange={onPromptStrengthChange}
             />
+*/}
+          <Theme.Slider
+            min={1}
+            max={30}
+            step={0.1}
+            value={input.cfgScale}
+            onChange={onPromptStrengthChange}
+            icon={Theme.Icon.Scale}
+            fullWidth
+          />
+          <div style={{ textAlign: 'center', marginTop: '10px' }}>
+            Prompt strength: {input.cfgScale || 'Auto'}
+          </div>
           </Theme.Tooltip>
           <Theme.Tooltip
             delay={750}
@@ -103,22 +116,10 @@ export function Advanced({
             }
             placement="right"
           >
-{/*            <Theme.NumberInput
-              icon={Theme.Icon.Steps}
-              label="Generation steps"
-              fullWidth
-              number
-              min={10}
-              step={1}
-              max={150}
-              value={input.steps}
-              onNumberChange={onStepsChange}
-            />
-*/}
           <Theme.Slider
             label="Generation steps"
-            min={30}
-            max={70}
+            min={20}
+            max={100}
             step={1}
             value={input.steps}
             onChange={onStepsChange}
