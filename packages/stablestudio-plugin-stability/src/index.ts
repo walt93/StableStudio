@@ -617,8 +617,8 @@ const markdownDescription = `
 Your Truthtide•TV membership gives you a set number of image renders per month.
 Image renders are re-loaded on the 1st of the month.
 
-If you need additional renders, you can subscribe at the [Truthtide Studio monthly membership] page(https://truthtide.studio/subscribe).
-If you just want to purchase a set number of renders, you can [purchase renders one-time here](https://truthtide.studio/buy-renders).
+If you need additional renders, you can subscribe at the [Truthtide Studio monthly membership page](https://truthtide.studio/subscribe).
+If you just want to make a one-time purchase, you can [purchase renders one-time here](https://truthtide.studio/buy-renders).
 
 We have a collection of sample images with the prompts that generated them on our [Sample Prompts page](https://truthtide.studeio/sample-prompts).
 ![](/media/image_samples.png)
