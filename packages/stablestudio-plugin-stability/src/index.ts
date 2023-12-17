@@ -540,6 +540,7 @@ export const createPlugin = StableStudio.createPlugin<{
         context.getStableDiffusionRandomPrompt()
       ),
 
+
     settings: {
       apiKey: {
         type: "string",
